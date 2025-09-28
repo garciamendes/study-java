@@ -17,10 +17,15 @@
   - ( * ) Multiplicação
   - ( % ) Resto da divisão
 
-- Operadores Lógicos: Podem ser utilizados para operações lógicas
+- Operadores Relacionais: Podem ser utilizados para operações de relações
   - ( < ) Menor que
   - ( > ) Maior que
   - ( <= ) Menor igual que
   - ( >= ) Maior igual que
   - ( == ) igual que
   - ( != ) Diferente que
+
+- Operadores Lógicos: Podem ser utilizados para operações lógicas
+  - ( && ) AND - Conjunção
+  - ( || ) OR - Disjunção (não exclusiva)
+  - ( ! ) NOT - Negação
