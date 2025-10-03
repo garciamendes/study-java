@@ -1,14 +1,18 @@
 package garciamendes.github.maratonajava.exercicios;
 
 /*
- * Exercícios - Aula 02: Tipos Primitivos
+ * Exercício da aula 02: Tipos Primitivos
  *
- * Crie variáveis para os campos descritos abaixo entre <> e imprima a seguinte mensagem:
+ * O objetivo é criar variáveis para armazenar informações pessoais e imprimir uma mensagem formatada.
  *
- * "Eu <nome>, morando no endereço <endereço>, confirmo que recebi o salário de <salário>, na data <data>"
+ * Variáveis usadas:
+ * - name: armazena o nome da pessoa
+ * - address: armazena o endereço
+ * - salary: armazena o salário recebido
+ * - date: armazena a data do recebimento
  *
+ * O System.out.println é usado para mostrar a mensagem no console.
  */
-
 public class Aula02TipoPrimitivos {
   public static void main(String[] args) {
     String name = "Matheus";
