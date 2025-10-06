@@ -49,14 +49,42 @@
 
 - Abstração: Foca nos aspectos essenciais de um objeto, ignorando detalhes desnecessários.
 
+- getters e setters: Métodos usados para acessar (get) e modificar (set) os valores dos atributos de uma classe, seguindo o princípio do encapsulamento.
+
+- public: Modificador de acesso que permite que o atributo ou método seja acessado de qualquer lugar do código.
+
+- private: Modificador de acesso que restringe o acesso ao atributo ou método apenas dentro da própria classe.
+
+- protected: Modificador de acesso que permite o acesso ao atributo ou método dentro da própria classe e em subclasses (classes filhas).
+
 ```java
 // Define uma classe chamada Pessoa
 class Pessoa {
-  String nome; // atributo
-  int idade;   // atributo
+  private String nome; // atributo privado, só pode ser acessado dentro da classe
+  private int idade;   // atributo privado
+
+  // Getter para nome (permite ler o valor do atributo)
+  public String getNome() { // public: pode ser acessado de qualquer lugar
+    return nome;
+  }
+
+  // Setter para nome (permite modificar o valor do atributo)
+  public void setNome(String nome) {
+    this.nome = nome;
+  }
+
+  // Getter para idade
+  public int getIdade() {
+    return idade;
+  }
+
+  // Setter para idade
+  public void setIdade(int idade) {
+    this.idade = idade;
+  }
 
   // método
-  void apresentar() {
+  public void apresentar() {
     System.out.println("Olá, meu nome é " + nome + " e tenho " + idade + " anos.");
   }
 }
@@ -65,9 +93,10 @@ class Pessoa {
 public class Main {
   public static void main(String[] args) {
     Pessoa pessoa1 = new Pessoa(); // cria objeto
-    pessoa1.nome = "Ana";
-    pessoa1.idade = 25;
-    pessoa1.apresentar(); // chama método
+    pessoa1.setNome("Ana");        // usa setter para definir nome
+    pessoa1.setIdade(25);          // usa setter para definir idade
+    pessoa1.apresentar();          // chama método
+    System.out.println(pessoa1.getNome()); // usa getter para acessar nome
   }
 }
 ```
