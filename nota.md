@@ -63,6 +63,11 @@ class Pessoa {
   private String nome; // atributo privado, só pode ser acessado dentro da classe
   private int idade;   // atributo privado
 
+  // Constructor
+  public Pessoa() {} // Constructor desse modo possibilita eu criar sem passar dados
+
+  public Pessoa(String nome, int idade) {} // Constructor desse modo, obrigatoriamente preciso passar dados pedido ao instanciar a classe
+
   // Getter para nome (permite ler o valor do atributo)
   public String getNome() { // public: pode ser acessado de qualquer lugar
     return nome;
