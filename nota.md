@@ -1,6 +1,7 @@
 - Pacotes: Para organizar todos projetos (java é orietado a pacotes)
 
 - Tipo primitivos: São tipo que é guardado em memoria (palavras reservadas)
+
   - int
   - double
   - float
@@ -11,13 +12,15 @@
   - boolean
 
 - Operadores Aritméticos: Podem ser utilizados para operações matemáticas
+
   - ( + ) Soma
   - ( - ) subtração
   - ( / ) Divisão
-  - ( * ) Multiplicação
+  - ( \* ) Multiplicação
   - ( % ) Resto da divisão
 
 - Operadores Relacionais: Podem ser utilizados para operações de relações
+
   - ( < ) Menor que
   - ( > ) Maior que
   - ( <= ) Menor igual que
@@ -30,32 +33,39 @@
   - ( || ) OR - Disjunção (não exclusiva)
   - ( ! ) NOT - Negação
 
------------------
+---
 
 ## Programação Orientada a Objetos (OOP) em Java
 
 ### A Programação Orientada a Objetos (OOP) é um paradigma de programação que organiza o código em torno de objetos, que representam entidades do mundo real ou conceitos abstratos. Cada objeto possui atributos (dados) e métodos (comportamentos).
 
 ### Principais conceitos da OOP:
-- Classe: É um molde (modelo) para criar objetos. Define os atributos e métodos que os objetos terão.
 
-- Objeto: É uma instância de uma classe. Cada objeto tem seus próprios valores para os atributos definidos na classe.
+- **Classe**: É um molde (modelo) para criar objetos. Define os atributos e métodos que os objetos terão.
 
-- Encapsulamento: Esconde os detalhes internos do objeto, permitindo acesso apenas por meio de métodos públicos.
+- **Objeto**: É uma instância de uma classe. Cada objeto tem seus próprios valores para os atributos definidos na classe.
 
-- Herança: Permite que uma classe herde atributos e métodos de outra, facilitando o reaproveitamento de código.
+- **Encapsulamento**: Esconde os detalhes internos do objeto, permitindo acesso apenas por meio de métodos públicos.
 
-- Polimorfismo: Permite que objetos de diferentes classes sejam tratados de forma semelhante, usando métodos com o mesmo nome.
+- **Herança**: Permite que uma classe herde atributos e métodos de outra, facilitando o reaproveitamento de código.
 
-- Abstração: Foca nos aspectos essenciais de um objeto, ignorando detalhes desnecessários.
+- **Polimorfismo**: Permite que objetos de diferentes classes sejam tratados de forma semelhante, usando métodos com o mesmo nome.
 
-- getters e setters: Métodos usados para acessar (get) e modificar (set) os valores dos atributos de uma classe, seguindo o princípio do encapsulamento.
+- **Abstração**: Foca nos aspectos essenciais de um objeto, ignorando detalhes desnecessários.
 
-- public: Modificador de acesso que permite que o atributo ou método seja acessado de qualquer lugar do código.
+- **getters** e setters: Métodos usados para acessar (get) e modificar (set) os valores dos atributos de uma classe, seguindo o princípio do encapsulamento.
 
-- private: Modificador de acesso que restringe o acesso ao atributo ou método apenas dentro da própria classe.
+- **public:** Modificador de acesso que permite que o atributo, método ou classe seja acessado de qualquer lugar do código, inclusive de outros pacotes.
+  _Exemplo: public int idade; // pode ser acessado de qualquer classe_
 
-- protected: Modificador de acesso que permite o acesso ao atributo ou método dentro da própria classe e em subclasses (classes filhas).
+- **private:** Modificador de acesso que restringe o acesso ao atributo ou método apenas dentro da própria classe onde foi declarado.
+  _Exemplo: private String nome; // só pode ser acessado dentro da classe_
+
+- **protected:** Modificador de acesso que permite o acesso ao atributo ou método dentro da própria classe, em subclasses (mesmo que estejam em outros pacotes) e dentro do mesmo pacote.
+  _Exemplo: protected double salario; // acessível na classe, subclasses e mesmo pacote_
+
+- **final:** Palavra-chave que indica que o valor de um atributo não pode ser alterado após ser definido, ou que um método não pode ser sobrescrito, ou que uma classe não pode ser estendida.
+  _Exemplo: final int ANO = 2025; // constante, valor não pode mudar_
 
 ```java
 // Define uma classe chamada Pessoa
