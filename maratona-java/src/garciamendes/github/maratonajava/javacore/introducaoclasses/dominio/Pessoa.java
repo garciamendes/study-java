@@ -1,10 +1,13 @@
 package garciamendes.github.maratonajava.javacore.introducaoclasses.dominio;
 
+import garciamendes.github.maratonajava.javacore.introducaoclasses.shared.TipoPessoaEnum;
+
 public class Pessoa {
   // Atributos da classe
-  public String nome;
-  public int idade;
-  public char sexo;
+  private String nome;
+  private int idade;
+  private char sexo;
+  private TipoPessoaEnum tipoPessoa;
 
   public String getNome() {
     return nome;
@@ -28,5 +31,13 @@ public class Pessoa {
 
   public void setSexo(char sexo) {
     this.sexo = sexo;
+  }
+
+  public String getTipoPessoa() {
+    return this.tipoPessoa.getLabel();
+  }
+
+  public void setTipoPessoa(TipoPessoaEnum tipoPessoa) {
+    this.tipoPessoa = tipoPessoa;
   }
 }
