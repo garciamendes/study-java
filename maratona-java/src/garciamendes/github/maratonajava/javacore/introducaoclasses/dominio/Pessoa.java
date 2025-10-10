@@ -1,8 +1,9 @@
 package garciamendes.github.maratonajava.javacore.introducaoclasses.dominio;
 
+import garciamendes.github.maratonajava.javacore.introducaoclasses.shared.PessoaInterface;
 import garciamendes.github.maratonajava.javacore.introducaoclasses.shared.TipoPessoaEnum;
 
-public class Pessoa {
+public class Pessoa implements PessoaInterface {
   // Atributos da classe
   private String nome;
   private int idade;
@@ -39,5 +40,10 @@ public class Pessoa {
 
   public void setTipoPessoa(TipoPessoaEnum tipoPessoa) {
     this.tipoPessoa = tipoPessoa;
+  }
+
+  @Override
+  public String Imprimir() {
+    return this.nome;
   }
 }
