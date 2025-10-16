@@ -17,5 +17,7 @@ public class EstudanteTest01 {
     System.out.println("Sexo: " + estudante.getSexo());
     System.out.println("Tipo: " + estudante.getTipoPessoa());
     System.out.println("ABS: " + estudante.Imprimir());
+
+    estudante.CheckPermissions();
   }
 }
