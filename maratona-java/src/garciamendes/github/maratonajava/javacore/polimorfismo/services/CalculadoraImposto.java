@@ -1,22 +1,13 @@
 package garciamendes.github.maratonajava.javacore.polimorfismo.services;
 
-import garciamendes.github.maratonajava.javacore.polimorfismo.dominio.Computador;
-import garciamendes.github.maratonajava.javacore.polimorfismo.dominio.Tomate;
+import garciamendes.github.maratonajava.javacore.polimorfismo.dominio.Produto;
 
 public class CalculadoraImposto {
-  public static void CalcularImpostoComputador(Computador computador) {
-    System.out.println("Calculando imposto do computador...");
+  public static void CalcularImposto(Produto produto) {
+    System.out.println("Calculando imposto...");
 
-    System.out.println("Computador: " + computador.getNome());
-    System.out.println("Valor: " + computador.getValor());
-    System.out.printf("Imposto a ser pago: %.2f \n", computador.CalcularImporto());
-  }
-
-  public static void CalcularImpostoTomate(Tomate tomate) {
-    System.out.println("Calculando imposto do tomate...");
-
-    System.out.println("Tomate: " + tomate.getNome());
-    System.out.println("Valor: " + tomate.getValor());
-    System.out.printf("Imposto a ser pago: %.2f \n", tomate.CalcularImporto());
+    System.out.println("Produto: " + produto.getNome());
+    System.out.println("Valor: " + produto.getValor());
+    System.out.printf("Imposto a ser pago: %.2f \n", produto.CalcularImporto());
   }
 }

@@ -7,11 +7,11 @@ import garciamendes.github.maratonajava.javacore.polimorfismo.services.Calculado
 public class ProdutoTest01 {
   public static void main(String[] args) {
     Computador computador = new Computador("G15", 4503);
-    CalculadoraImposto.CalcularImpostoComputador(computador);
+    CalculadoraImposto.CalcularImposto(computador);
 
     System.out.println("=========================================");
 
     Tomate tomate = new Tomate("Tomate English", 23);
-    CalculadoraImposto.CalcularImpostoTomate(tomate);
+    CalculadoraImposto.CalcularImposto(tomate);
   }
 }
