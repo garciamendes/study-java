@@ -6,13 +6,13 @@ import garciamendes.github.maratonajava.javacore.polimorfismo.services.Repositor
 import garciamendes.github.maratonajava.javacore.polimorfismo.services.RepositorioMemoria;
 
 public class RepositorioTest {
-  public static void main(String[] args) {
-    Repositorio repositorioBanco = new RepositorioBancodeDados();
-    Repositorio repositorioArquivo = new RepositorioArquivo();
-    Repositorio repositorioMemoria = new RepositorioMemoria();
+    public static void main(String[] args) {
+        Repositorio repositorioBanco = new RepositorioBancodeDados();
+        Repositorio repositorioArquivo = new RepositorioArquivo();
+        Repositorio repositorioMemoria = new RepositorioMemoria();
 
-    repositorioBanco.salvar();
-    repositorioArquivo.salvar();
-    repositorioMemoria.salvar();
-  }
+        repositorioBanco.salvar();
+        repositorioArquivo.salvar();
+        repositorioMemoria.salvar();
+    }
 }

@@ -14,13 +14,14 @@ package garciamendes.github.maratonajava.exercicios;
  * O System.out.println é usado para mostrar a mensagem no console.
  */
 public class Aula02TipoPrimitivos {
-  public static void main(String[] args) {
-    String name = "Matheus";
-    String address = "Rua N";
-    double salary = 2500.00;
-    String date = "10/05/2024";
+    public static void main(String[] args) {
+        String name = "Matheus";
+        String address = "Rua N";
+        double salary = 2500.00;
+        String date = "10/05/2024";
 
-    System.out.println("Eu " + name + " morando no endereço " + address + " confirmo que recebi o salário de " + salary
-        + " na data " + date);
-  }
+        System.out.println(
+                "Eu " + name + " morando no endereço " + address + " confirmo que recebi o salário de " + salary
+                        + " na data " + date);
+    }
 }

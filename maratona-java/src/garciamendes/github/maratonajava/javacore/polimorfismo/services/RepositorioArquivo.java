@@ -4,8 +4,8 @@ import garciamendes.github.maratonajava.javacore.polimorfismo.repositorio.Reposi
 
 public class RepositorioArquivo implements Repositorio {
 
-  @Override
-  public void salvar() {
-    System.out.println("Salvando em arquivo");
-  }
+    @Override
+    public void salvar() {
+        System.out.println("Salvando em arquivo");
+    }
 }

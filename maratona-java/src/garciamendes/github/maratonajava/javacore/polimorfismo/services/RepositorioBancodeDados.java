@@ -4,8 +4,8 @@ import garciamendes.github.maratonajava.javacore.polimorfismo.repositorio.Reposi
 
 public class RepositorioBancodeDados implements Repositorio {
 
-  @Override
-  public void salvar() {
-    System.out.println("Salvando em banco de dados");
-  }
+    @Override
+    public void salvar() {
+        System.out.println("Salvando em banco de dados");
+    }
 }

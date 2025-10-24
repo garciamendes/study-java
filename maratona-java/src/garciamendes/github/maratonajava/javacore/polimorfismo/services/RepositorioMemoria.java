@@ -4,8 +4,8 @@ import garciamendes.github.maratonajava.javacore.polimorfismo.repositorio.Reposi
 
 public class RepositorioMemoria implements Repositorio {
 
-  @Override
-  public void salvar() {
-    System.out.println("Salvando em memoria");
-  }
+    @Override
+    public void salvar() {
+        System.out.println("Salvando em memoria");
+    }
 }
